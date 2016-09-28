@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_email"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="70dp"
+
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:paddingTop="30dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_password"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="70dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+
+           android:paddingTop="30dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button android:id="@+id/btn_signup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="LogIn"
+        android:background="@color/ColorPrimary"
+
+        android:textColor="@android:color/white"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/input_layout_password"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/forgot_password"
+        android:id="@+id/tvforgot"
+        android:layout_below="@+id/btn_signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#072c38" />
+
+
+</RelativeLayout>
