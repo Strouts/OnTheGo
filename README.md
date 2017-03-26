@@ -1,2 +1,2 @@
 # OnTheGo
-An robust office utility application.
+An robust daily use office/workplace utility application for smoothening hierarchical approval system.
